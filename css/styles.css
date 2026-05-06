@@ -212,7 +212,7 @@ body {
   inset: 0;
   background-image: url('../images/bw-hands.jpg');
   background-size: cover;
-  background-position: center top;
+  background-position: center center;
   opacity: 0.35;
   transform: scale(1.05);
   transition: transform 8s ease;
