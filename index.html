@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sheltering Arms Care Homes | Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #1B4332;
+      --green-light: #2D6A4F;
+      --cream: #F5F0E8;
+      --gold: #C9A84C;
+      --gold-light: #E8C97A;
+      --off-white: #FAFAF5;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background-color: var(--green);
+      color: var(--cream);
+      font-family: 'Jost', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Subtle leaf texture background */
+    body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(ellipse at 20% 50%, rgba(45, 106, 79, 0.4) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 50%, rgba(45, 106, 79, 0.3) 0%, transparent 60%),
+        radial-gradient(ellipse at 50% 100%, rgba(201, 168, 76, 0.08) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    /* Gold border frame */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 20px;
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      pointer-events: none;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    .container {
+      text-align: center;
+      padding: 3rem 2rem;
+      position: relative;
+      z-index: 1;
+      animation: riseUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      justify-content: center;
+      margin: 1.5rem 0;
+    }
+
+    .divider-line {
+      width: 60px;
+      height: 1px;
+      background: var(--gold);
+      opacity: 0.6;
+    }
+
+    .divider-dot {
+      width: 5px;
+      height: 5px;
+      background: var(--gold);
+      border-radius: 50%;
+      opacity: 0.8;
+    }
+
+    .business-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.8rem, 7vw, 5rem);
+      font-weight: 600;
+      color: var(--off-white);
+      letter-spacing: 0.02em;
+      line-height: 1.1;
+    }
+
+    .business-subtitle {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1rem, 2.5vw, 1.4rem);
+      font-weight: 400;
+      color: var(--gold);
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      margin-top: 0.4rem;
+    }
+
+    .subtagline {
+      font-family: 'Jost', sans-serif;
+      font-size: clamp(0.75rem, 1.8vw, 0.9rem);
+      font-weight: 300;
+      color: rgba(245, 240, 232, 0.6);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-top: 0.5rem;
+    }
+
+    .coming-soon {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.1rem, 3vw, 1.6rem);
+      font-style: italic;
+      color: var(--cream);
+      opacity: 0.85;
+      margin: 0.5rem 0 0.2rem;
+    }
+
+    .location {
+      font-family: 'Jost', sans-serif;
+      font-size: clamp(0.8rem, 2vw, 1rem);
+      font-weight: 300;
+      color: var(--gold);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      font-style: italic;
+      color: rgba(245, 240, 232, 0.7);
+      margin-top: 0.3rem;
+    }
+
+    .dedication {
+      font-family: 'Jost', sans-serif;
+      font-size: clamp(0.65rem, 1.5vw, 0.78rem);
+      font-weight: 300;
+      color: rgba(245, 240, 232, 0.35);
+      letter-spacing: 0.1em;
+      margin-top: 3rem;
+      font-style: italic;
+    }
+
+    @keyframes riseUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 480px) {
+      body::after {
+        inset: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="business-name">Sheltering Arms</div>
+    <div class="business-subtitle">Care Homes</div>
+    <div class="subtagline">Compassion &bull; Comfort &bull; Community</div>
+
+    <div class="divider">
+      <div class="divider-line"></div>
+      <div class="divider-dot"></div>
+      <div class="divider-line"></div>
+    </div>
+
+    <div class="coming-soon">Coming Soon to</div>
+    <div class="location">Sparks, Nevada</div>
+
+    <div class="divider">
+      <div class="divider-line"></div>
+      <div class="divider-dot"></div>
+      <div class="divider-line"></div>
+    </div>
+
+    <div class="tagline">Care with Heart. &nbsp;Life with Dignity.</div>
+    <div class="dedication">* For Bhea, we love you</div>
+    <div class="dedication">* And to my parents, without whose support none of this would be possible.</div>
+  </div>
+</body>
+</html>
