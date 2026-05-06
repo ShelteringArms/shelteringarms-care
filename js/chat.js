@@ -17,7 +17,7 @@ SERVICES PROVIDED:
 - ADL assistance (bathing, grooming, toileting, teeth brushing, eating, dressing)
 - Medication administration and management
 - 24/7 caregiver staffing
-- All meals and snacks included (fresh, home-cooked meals prepared by our dedicated caregivers
+- All meals and snacks included (fresh, home-cooked meals prepared by our dedicated caregivers)
 - Fresh fruits daily, weekly customized meal preferences, baked goods
 - Entertainment, movies, games, daily activities
 - Welcome basket for new residents
