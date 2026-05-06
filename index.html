@@ -3,202 +3,188 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sheltering Arms Care Homes | Coming Soon</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --green: #1B4332;
-      --green-light: #2D6A4F;
-      --cream: #F5F0E8;
-      --gold: #C9A84C;
-      --gold-light: #E8C97A;
-      --off-white: #FAFAF5;
-    }
-
-    *, *::before, *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html, body {
-      height: 100%;
-    }
-
-    body {
-      background-color: var(--green);
-      color: var(--cream);
-      font-family: 'Jost', sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      overflow: hidden;
-      position: relative;
-    }
-
-    /* Subtle leaf texture background */
-    body::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: 
-        radial-gradient(ellipse at 20% 50%, rgba(45, 106, 79, 0.4) 0%, transparent 60%),
-        radial-gradient(ellipse at 80% 50%, rgba(45, 106, 79, 0.3) 0%, transparent 60%),
-        radial-gradient(ellipse at 50% 100%, rgba(201, 168, 76, 0.08) 0%, transparent 50%);
-      pointer-events: none;
-    }
-
-    /* Gold border frame */
-    body::after {
-      content: '';
-      position: fixed;
-      inset: 20px;
-      border: 1px solid rgba(201, 168, 76, 0.3);
-      pointer-events: none;
-      animation: fadeIn 2s ease forwards;
-    }
-
-    .container {
-      text-align: center;
-      padding: 3rem 2rem;
-      position: relative;
-      z-index: 1;
-      animation: riseUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-      opacity: 0;
-      transform: translateY(30px);
-    }
-
-    .divider {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      justify-content: center;
-      margin: 1.5rem 0;
-    }
-
-    .divider-line {
-      width: 60px;
-      height: 1px;
-      background: var(--gold);
-      opacity: 0.6;
-    }
-
-    .divider-dot {
-      width: 5px;
-      height: 5px;
-      background: var(--gold);
-      border-radius: 50%;
-      opacity: 0.8;
-    }
-
-    .business-name {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2.8rem, 7vw, 5rem);
-      font-weight: 600;
-      color: var(--off-white);
-      letter-spacing: 0.02em;
-      line-height: 1.1;
-    }
-
-    .business-subtitle {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(1rem, 2.5vw, 1.4rem);
-      font-weight: 400;
-      color: var(--gold);
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      margin-top: 0.4rem;
-    }
-
-    .subtagline {
-      font-family: 'Jost', sans-serif;
-      font-size: clamp(0.75rem, 1.8vw, 0.9rem);
-      font-weight: 300;
-      color: rgba(245, 240, 232, 0.6);
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      margin-top: 0.5rem;
-    }
-
-    .coming-soon {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(1.1rem, 3vw, 1.6rem);
-      font-style: italic;
-      color: var(--cream);
-      opacity: 0.85;
-      margin: 0.5rem 0 0.2rem;
-    }
-
-    .location {
-      font-family: 'Jost', sans-serif;
-      font-size: clamp(0.8rem, 2vw, 1rem);
-      font-weight: 300;
-      color: var(--gold);
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-    }
-
-    .tagline {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(1rem, 2.5vw, 1.3rem);
-      font-style: italic;
-      color: rgba(245, 240, 232, 0.7);
-      margin-top: 0.3rem;
-    }
-
-    .dedication {
-      font-family: 'Jost', sans-serif;
-      font-size: clamp(0.65rem, 1.5vw, 0.78rem);
-      font-weight: 300;
-      color: rgba(245, 240, 232, 0.35);
-      letter-spacing: 0.1em;
-      margin-top: 3rem;
-      font-style: italic;
-    }
-
-    @keyframes riseUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes fadeIn {
-      to { opacity: 1; }
-    }
-
-    @media (max-width: 480px) {
-      body::after {
-        inset: 10px;
-      }
-    }
-  </style>
+  <meta name="description" content="Sheltering Arms Care Homes – Compassionate adult residential care in Sparks, Nevada. Two homes, 24/7 staffing, medication management, and a personal touch.">
+  <title>Sheltering Arms Care Homes | Sparks, Nevada</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="container">
-    <div class="business-name">Sheltering Arms</div>
-    <div class="business-subtitle">Care Homes</div>
-    <div class="subtagline">Compassion &bull; Comfort &bull; Community</div>
 
-    <div class="divider">
-      <div class="divider-line"></div>
-      <div class="divider-dot"></div>
-      <div class="divider-line"></div>
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Sheltering Arms logo">
+      <div class="nav-brand">
+        <span class="nav-brand-name">Sheltering Arms</span>
+        <span class="nav-brand-sub">Care Homes</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="homes.html">Our Homes</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Sparks, Nevada &nbsp;·&nbsp; Adult Care Homes</div>
+      <h1 class="hero-title">
+        Care with <em>Heart.</em><br>Life with Dignity.
+      </h1>
+      <p class="hero-subtitle">Compassion · Comfort · Community</p>
+      <p class="hero-tagline">Two homes. One family. 25+ years of care.</p>
+      <a href="contact.html" class="hero-cta">
+        Get in Touch
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
     </div>
-
-    <div class="coming-soon">Coming Soon to</div>
-    <div class="location">Sparks, Nevada</div>
-
-    <div class="divider">
-      <div class="divider-line"></div>
-      <div class="divider-dot"></div>
-      <div class="divider-line"></div>
+    <div class="hero-scroll">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      Scroll
     </div>
+  </section>
 
-    <div class="tagline">Care with Heart. &nbsp;Life with Dignity.</div>
-    <div class="dedication">* For Bhea, we love you</div>
-    <div class="dedication">* And to my parents, without whose support none of this would be possible.</div>
+  <!-- MISSION -->
+  <section class="mission">
+    <div class="mission-inner">
+      <div class="mission-left reveal">
+        <div class="section-label">Our Mission</div>
+        <p class="mission-quote">
+          To provide the kind of care for your loved one that we would want provided for our loved ones.
+        </p>
+        <div class="divider">
+          <div class="divider-line"></div>
+          <div class="divider-dot"></div>
+          <div class="divider-line"></div>
+        </div>
+        <p class="section-body">
+          Trusting someone to provide care for your loved one is not a responsibility we take lightly. We strive to provide a safe, healthy, and comfortable environment — just like what we would want for our own family. We thank you for putting your trust in us, and we look forward to exceeding your expectations.
+        </p>
+      </div>
+      <div class="mission-right reveal">
+        <div class="section-label">Our Vision</div>
+        <h2 class="section-title">A Place That Feels Like <em>Home</em></h2>
+        <p class="section-body">
+          We want to create an environment where our residents feel at home — where they feel safe, where they feel free to be as comfortable or active as they choose, and where they have multiple options to feel a part of the community.
+        </p>
+        <div class="mission-vision">
+          <div class="mission-vision-label">Our Promise</div>
+          <p class="mission-vision-text">
+            Sheltering Arms abides by all state and federal laws and does not discriminate on the basis of race, color, age, disability, gender, sexual orientation, or any other protected characteristic. Every resident is welcomed with dignity and respect.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO STRIP -->
+  <div class="photo-strip">
+    <div class="photo-strip-item">
+      <img src="images/home1-exterior.jpg" alt="Sheltering Arms Home 1 exterior">
+    </div>
+    <div class="photo-strip-item">
+      <img src="images/bw-hands.jpg" alt="Compassionate care at Sheltering Arms">
+    </div>
+    <div class="photo-strip-item">
+      <img src="images/wheelchair-walk.jpg" alt="Resident enjoying an outdoor walk">
+    </div>
+    <div class="photo-strip-item">
+      <img src="images/home2-exterior.jpg" alt="Sheltering Arms Home 2 exterior">
+    </div>
   </div>
+
+  <!-- CREDENTIALS BANNER -->
+  <div class="credentials">
+    <div class="credentials-inner">
+      <div class="credential-item reveal">
+        <div class="credential-number">25+</div>
+        <div class="credential-label">Years of Healthcare Experience</div>
+      </div>
+      <div class="credential-item reveal">
+        <div class="credential-number">14</div>
+        <div class="credential-label">Resident Capacity Across Both Homes</div>
+      </div>
+      <div class="credential-item reveal">
+        <div class="credential-number">24/7</div>
+        <div class="credential-label">Trained Caregiver Staffing</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOMES PREVIEW -->
+  <section class="homes-preview">
+    <div class="homes-preview-inner">
+      <div class="section-label reveal">Our Locations</div>
+      <h2 class="section-title reveal">Two Homes in <em>Sparks, Nevada</em></h2>
+      <p class="section-body reveal">Each home offers a warm, residential setting with personalized care tailored to every resident's needs. Both are staffed around the clock by certified caregivers who are passionate about what they do.</p>
+      <div class="homes-grid">
+        <div class="home-card reveal">
+          <img src="images/home1-exterior.jpg" alt="Home 1 exterior" class="home-card-img">
+          <div class="home-card-body">
+            <div class="home-card-label">Sparks, Nevada</div>
+            <div class="home-card-title">Home One</div>
+            <div class="home-card-details">
+              <div class="home-card-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                6 Residents
+              </div>
+              <div class="home-card-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                Private &amp; Shared Rooms
+              </div>
+            </div>
+            <p class="home-card-text">A warm, homelike setting offering comprehensive care with a personal touch. MI endorsement facility.</p>
+            <a href="homes.html#home1" class="home-card-link">
+              Learn More
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="home-card reveal">
+          <img src="images/home2-exterior.jpg" alt="Home 2 exterior" class="home-card-img">
+          <div class="home-card-body">
+            <div class="home-card-label">Sparks, Nevada</div>
+            <div class="home-card-title">Home Two</div>
+            <div class="home-card-details">
+              <div class="home-card-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                8 Residents
+              </div>
+              <div class="home-card-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                Private &amp; Shared Rooms
+              </div>
+            </div>
+            <p class="home-card-text">Fully accessible with ramp entry, offering the same exceptional level of personalized care. MI endorsement facility.</p>
+            <a href="homes.html#home2" class="home-card-link">
+              Learn More
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="images/logo.png" alt="Sheltering Arms logo">
+      <span class="footer-name">Sheltering Arms Care Homes</span>
+    </div>
+    <p class="footer-tagline">Care with Heart · Life with Dignity</p>
+    <ul class="footer-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="homes.html">Our Homes</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p class="footer-copy">&copy; 2025 Sheltering Arms Care Homes. Sparks, Nevada. All rights reserved.</p>
+    <p class="footer-dedication">* For Bhea, we love you &nbsp;·&nbsp; * And to my parents, without whose support none of this would be possible.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Sheltering Arms Care Homes in Sparks, Nevada. Ask our AI assistant or send us a message directly.">
+  <title>Contact | Sheltering Arms Care Homes</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Sheltering Arms logo">
+      <div class="nav-brand">
+        <span class="nav-brand-name">Sheltering Arms</span>
+        <span class="nav-brand-sub">Care Homes</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="homes.html">Our Homes</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTACT HERO -->
+  <section class="contact-hero">
+    <div class="contact-hero-inner">
+      <div class="contact-hero-content reveal">
+        <div class="section-label" style="color:var(--gold);">We're Here For You</div>
+        <h1 class="contact-hero-title">Let's Start a <em style="color:var(--gold-light); font-style:italic;">Conversation</em></h1>
+        <p class="contact-hero-text">
+          Finding the right care home for your loved one is one of the most important decisions you'll make. We're here to answer every question, address every concern, and walk alongside you through the process.
+        </p>
+        <p class="contact-hero-text" style="font-family:'Cormorant Garamond', serif; font-style:italic; font-size:1.1rem; color:rgba(245,240,232,0.6);">
+          "We provide the kind of care you'd want your grandmother to receive — warm, dignified, and deeply personal."
+        </p>
+      </div>
+      <div>
+        <img src="images/grace-michael.jpg" alt="Grace Ascura and Michael Chamberlain, owners of Sheltering Arms" class="contact-owners-img">
+        <div class="contact-owners-caption">Grace Ascura &amp; Michael Chamberlain &nbsp;·&nbsp; Owners &amp; Operators</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OWNERS BIO -->
+  <section class="section" style="background:var(--cream); padding: 5rem 4rem;">
+    <div class="section-inner">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start;">
+        <div class="reveal">
+          <div class="section-label">Meet the Team</div>
+          <h2 class="section-title">Medical Professionals Who <em>Truly Care</em></h2>
+          <p class="section-body">
+            Sheltering Arms is owned and operated by a board-certified critical care nurse and an experienced medical assistant — together bringing more than 25 years of healthcare experience to every aspect of your loved one's care.
+          </p>
+          <p class="section-body" style="margin-top:1rem;">
+            We didn't just build care homes — we built the kind of home we'd want for our own family. That standard guides everything we do, every single day.
+          </p>
+        </div>
+        <div class="reveal">
+          <img src="images/bw-hands.jpg" alt="Grace holding a resident's hand — compassionate care at Sheltering Arms" style="width:100%; height:320px; object-fit:cover; border-radius:12px; box-shadow:0 20px 60px rgba(27,67,50,0.16);">
+          <p style="font-size:0.75rem; color:var(--text-light); font-style:italic; margin-top:0.75rem; text-align:center;">Care with Heart — a quiet moment of connection.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI CHAT WIDGET -->
+  <section class="chat-section">
+    <div class="chat-inner">
+      <div class="section-label reveal" style="text-align:center;">Ask Anything</div>
+      <h2 class="section-title reveal" style="text-align:center; max-width:600px; margin:0 auto 0.5rem;">Have Questions? <em>We Have Answers.</em></h2>
+      <p class="section-body reveal" style="text-align:center; margin:0 auto 2.5rem;">Our AI assistant can answer questions about adult care homes in general, and about Sheltering Arms specifically — anytime, day or night.</p>
+
+      <div class="chat-window reveal">
+        <div class="chat-header">
+          <div class="chat-avatar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <div class="chat-header-text">
+            <div class="chat-header-name">Sheltering Arms Assistant</div>
+            <div class="chat-header-status">
+              <div class="chat-status-dot"></div>
+              Available 24/7 to answer your questions
+            </div>
+          </div>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+          <div class="chat-msg bot">
+            <div class="chat-msg-avatar">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <div class="chat-msg-bubble">
+              Hello! I'm here to help answer your questions about Sheltering Arms Care Homes and adult residential care in general. What would you like to know?
+            </div>
+          </div>
+        </div>
+        <div class="chat-input-area">
+          <input type="text" class="chat-input" id="chatInput" placeholder="Ask about care, services, availability..." autocomplete="off">
+          <button class="chat-send" id="chatSend" aria-label="Send message">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </div>
+      </div>
+      <p style="font-size:0.75rem; color:var(--text-light); text-align:center; margin-top:1rem; font-style:italic; font-weight:300;">Our assistant can answer general questions and information about our homes. For medical advice, please consult a healthcare professional.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="contact-form-section">
+    <div class="contact-form-inner">
+      <div class="section-label reveal" style="text-align:center;">Send a Message</div>
+      <h2 class="section-title reveal" style="text-align:center;">Ready to Take the <em>Next Step?</em></h2>
+      <p class="section-body reveal" style="text-align:center; margin:0 auto 3rem;">Fill out the form below and we'll be in touch as soon as possible. We look forward to hearing from you.</p>
+
+      <form action="https://formspree.io/f/meenggbr" method="POST" class="reveal">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="name">Your Name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Full name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder="(775) 000-0000">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email Address</label>
+          <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="interest">I'm Interested In</label>
+          <select id="interest" name="interest" class="form-select">
+            <option value="">Select an option</option>
+            <option value="home1">Home One (6 residents)</option>
+            <option value="home2">Home Two (8 residents)</option>
+            <option value="both">Both Homes</option>
+            <option value="general">General Information</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Your Message</label>
+          <textarea id="message" name="message" class="form-textarea" placeholder="Tell us a little about your loved one and what you're looking for..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send Message</button>
+        <p class="form-note">Your message is sent securely. We typically respond within one business day.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- COMPLIANCE -->
+  <section class="compliance">
+    <div class="compliance-inner">
+      <div class="reveal">
+        <div class="compliance-block-title">Notice of Nondiscrimination</div>
+        <p class="compliance-text">
+          Sheltering Arms Care Homes does not discriminate and does not permit discrimination — including bullying, abuse, or harassment — on the basis of actual or perceived race, color, religion, national origin, ancestry, age, gender, physical or mental disability, sexual orientation, gender identity or expression, or HIV status, in accordance with Nevada Revised Statutes § 449.101.
+        </p>
+        <p class="compliance-text" style="margin-top:1rem;">
+          A patient or resident who has experienced prohibited discrimination may file a complaint with the Division of Public and Behavioral Health (DPBH).
+        </p>
+      </div>
+      <div class="reveal">
+        <div class="compliance-block-title">File a Complaint</div>
+        <p class="compliance-text">To file a complaint against a facility, contact the State of Nevada Bureau of Health Care Quality &amp; Compliance:</p>
+        <div class="compliance-contact" style="margin-top:1rem;">
+          <p><strong>By Phone:</strong> (702) 668-3250</p>
+          <p><strong>Online:</strong> nvha.nv.gov → Health Facilities → Complaints → File a Complaint</p>
+          <p style="margin-top:0.75rem;"><strong>Department of Health and Human Services</strong><br>
+          Division of Public and Behavioral Health (DPBH)<br>
+          4150 Technology Way<br>
+          Carson City, Nevada 89706<br>
+          Tel: (775) 684-4200 &nbsp;·&nbsp; Fax: (775) 687-7570</p>
+          <p style="margin-top:0.5rem;"><em style="font-size:0.75rem;">Nevada Revised Statutes § 449.101</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="images/logo.png" alt="Sheltering Arms logo">
+      <span class="footer-name">Sheltering Arms Care Homes</span>
+    </div>
+    <p class="footer-tagline">Care with Heart · Life with Dignity</p>
+    <ul class="footer-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="homes.html">Our Homes</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p class="footer-copy">&copy; 2025 Sheltering Arms Care Homes. Sparks, Nevada. All rights reserved.</p>
+    <p class="footer-dedication">* For Bhea, we love you &nbsp;·&nbsp; * And to my parents, without whose support none of this would be possible.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+</html>
