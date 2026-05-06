@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
     showTyping();
 
     try {
-      const response = await fetch('https://api.anthropic.com/v1/messages', {
+      const response = await fetch('https://shelteringarms-chat.mngcarehomes.workers.dev', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
