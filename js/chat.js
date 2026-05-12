@@ -9,9 +9,13 @@ ABOUT SHELTERING ARMS:
 - Two residential adult care homes in Sparks, Nevada
 - Care Home One: 6 residents, manicured yard, cherry tree in the backyard
 - Care Home Two: 8 residents, spacious interior, golf course views
-- Both homes hold Adult Care Home licenses with Mental Illness (MI) endorsement, have private and shared rooms available, are fully wheelchair accessible with ramp entry, and have a covered porch
-- Combined 25+ years healthcare experience — board-certified critical care nurse and experienced medical assistant
-- 24/7 staffing by trained caregivers certified in medication administration and CPR
+- Both homes hold Adult Care Home licenses with Mental Illness (MI) endorsement, have private and shared rooms available, are fully wheelchair accessible with ramp entry, and have a covered porch.
+- Michael and Grace have a combined 25+ years healthcare experience 
+— Michael was a critical care nurse and is currently a board-certified advanced practice nurse.
+- Grace is an experienced medical assistant, loving mother, and excellent cook.
+- 24/7 staffing by trained caregivers certified in medication administration and CPR.
+- Sheltering Arms has been operating since 2020 in the Reno and Sparks areas.
+- Sheltering Arms maintains good relationships with local hospitals, facilities, and hospice organizations.
 
 SERVICES PROVIDED:
 - ADL assistance (bathing, grooming, toileting, teeth brushing, eating, dressing)
@@ -48,7 +52,7 @@ PAYMENT OPTIONS:
 - Medicaid accepted — team assists with eligibility determination
 
 NONDISCRIMINATION:
-Sheltering Arms does not discriminate on the basis of race, color, age, disability, gender, sexual orientation, or any other protected characteristic per Nevada Revised Statutes § 449.101.
+- Sheltering Arms does not discriminate on the basis of race, color, age, disability, gender, sexual orientation, or any other protected characteristic per Nevada Revised Statutes § 449.101.
 
 CONTACT:
 - Families interested in placement should use the contact form on this page
